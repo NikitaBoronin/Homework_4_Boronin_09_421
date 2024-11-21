@@ -165,7 +165,7 @@
 
             // 3 Task
             Console.WriteLine("\nУпражнение 5.3");
-            int number = 2; // Пример числа для вычисления факториала
+            int number = 2; 
             ulong resultTT;
             bool success = Factorial(number, out resultTT);
 
@@ -207,7 +207,7 @@
 
             // 6 Task
             Console.WriteLine("\nДомашнее задание 5.2");
-            int n = 10; // Вы можете изменить это значение для получения другого числа ряда Фибоначчи
+            int n = 10; 
             long resultss = Fibonacci(n);
 
             Console.WriteLine($"Число Фибоначчи для n = {n} равно {resultss}");

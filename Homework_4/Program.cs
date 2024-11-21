@@ -2,8 +2,7 @@
 {
     internal class Program
     {
-        // Вывести на экран массив из 20 случайных чисел. Ввести два числа из этого массива,
-        // которые нужно поменять местами.Вывести на экран получившийся массив.
+        
         // 1 Задание!
         static bool NumberExistsInArray(int[] array, int number)
         {
@@ -144,7 +143,7 @@
 
                 string input = Console.ReadLine();
 
-                // Проверка на выход
+                
                 if (input.ToLower() == "exit" || input.ToLower() == "закрыть")
                 {
                     Console.WriteLine("Программа завершена.");
@@ -153,7 +152,7 @@
 
                 try
                 {
-                    // Проверка на число
+                   
                     int number = int.Parse(input);
 
                     if (number >= 0 && number <= 9)
@@ -162,7 +161,7 @@
                     }
                     else
                     {
-                        // Число не в диапазоне от 0 до 9
+                        
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Ошибка: число должно быть от 0 до 9!");
                         Thread.Sleep(3000);
@@ -171,7 +170,7 @@
                 }
                 catch (FormatException)
                 {
-                    // Введено не число
+                   
                     Console.WriteLine("Ошибка: введено не число! Программа завершена с исключением.");
                     throw;
                 }
@@ -182,12 +181,12 @@
 
         struct GrandFather
         {
-            public string Name; // Имя деда
-            public GrumbleLevel Level; // Уровень ворчливости
-            public string[] Phrases; // Массив фраз для ворчания
-            public int NumberBruises; // Количество фингалов от бабки
+            public string Name; 
+            public GrumbleLevel Level; 
+            public string[] Phrases; 
+            public int NumberBruises;
 
-            // Метод, который проверяет наличие матерных слов в фразах деда
+            
             public int GetHit(params string[] swearWords)
             {
                 foreach (var phrase in Phrases)
